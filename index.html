@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NUSANTARA SHOP — marketplace multi-kategori. Belanja elektronik, fashion, kecantikan, plus pulsa, kuota, token listrik, dan voucher game.">
+<title>NUSANTARA SHOP — Belanja Apa Aja</title>
+<link rel="stylesheet" href="css/stayle.css">
+<link rel="stylesheet" href="assets/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+<link rel="icon" type="image/png" href="Logo_branding/logo.jpg">
+
+<!-- Preload gambar produk pertama untuk Flash Sale (percepat LCP) -->
+<link rel="preload" as="image" href="logo_branding/TWS.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="Logo_branding/jilbab.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="Logo_branding/LIPTIN.jpg" fetchpriority="high">
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">Lompat ke konten utama</a>
+
+<!-- Fallback kalau JavaScript mati -->
+<noscript>
+  <div style="padding:1rem;background:#B01E28;color:#fff;text-align:center;font-family:sans-serif;">
+    ⚠️ Aktifkan JavaScript di browser Anda agar gambar dan produk dapat dimuat.
+  </div>
+</noscript>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>🚀 Gratis ongkir min. Rp 0 · COD tersedia · Pengiriman se-Indonesia</span>
+    <div class="topbar-links">
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Bantuan</a>
+      <a href="#">Lacak Pesanan</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-main">
+    <div class="container header-inner">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="brand" href="index.html">
+         <img src="Logo_branding/logo.jpg" alt="Logo NUSANTARA SHOP" class="brand-logo">
+         <span class="brand-text"><strong>NUSANTARA SHOP</strong><small>Belanja Apa Aja</small></span>
+       </a>
+      <form class="header-search" role="search" id="headerSearchForm">
+        <label class="sr-only" for="headerSearch">Cari produk</label>
+        <input type="search" id="headerSearch" placeholder="Cari produk, elektronik, fashion…" autocomplete="off">
+        <button type="submit" class="search-btn" aria-label="Cari">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+      </form>
+      <div class="header-actions">
+        <button class="icon-btn" id="cartBtn" aria-label="Buka keranjang">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <a class="btn btn-login btn-sm" href="#">Masuk</a>
+        <a class="btn btn-signup btn-sm" href="#">Daftar</a>
+      </div>
+    </div>
+  </div>
+  <nav class="category-nav" aria-label="Kategori">
+    <div class="container">
+      <ul>
+        <li><a href="katalog.html" class="is-active">🏠 Semua</a></li>
+        <li><a href="katalog.html?kategori=Elektronik">📱 Elektronik</a></li>
+        <li><a href="katalog.html?kategori=Fashion">👕 Fashion</a></li>
+        <li><a href="katalog.html?kategori=Kecantikan">💄 Kecantikan</a></li>
+        <li><a href="katalog.html?kategori=Rumah">🏠 Rumah Tangga</a></li>
+        <li><a href="katalog.html?kategori=Olahraga">⚽ Olahraga</a></li>
+        <li><a href="katalog.html?kategori=Makanan">🍔 Makanan</a></li>
+        <li><a href="katalog.html?kategori=Hobi">🎮 Hobi</a></li>
+        <li><a href="digital.html">📲 Pulsa & Tagihan</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<aside class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="mobile-nav-panel">
+   <div class="mobile-nav-head">
+        <a class="brand" href="index.html">
+          <img src="Logo_branding/logo.jpg" alt="Logo NUSANTARA SHOP" class="brand-logo">
+          <span class="brand-text"><strong>NUSANTARA SHOP</strong><small>Belanja Apa Aja</small></span>
+       </a>
+    <nav aria-label="Menu mobile">
+      <ul>
+        <li><a href="index.html">🏠 Beranda</a></li>
+        <li><a href="katalog.html">🛍️ Katalog Produk</a></li>
+        <li><a href="digital.html">📲 Pulsa & Tagihan</a></li>
+        <li><a href="tentang.html">ℹ️ Tentang Kami</a></li>
+        <li><a href="kontak.html">📞 Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<main id="main">
+
+  <!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Banner Utama dengan Background Gambar -->
+      <div class="hero-banner hero-banner-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-eyebrow">PROMO SPESIAL HARI INI</span>
+          <h1>Belanja Apa Aja,<br>Semua Ada di <em>NUSANTARA SHOP</em>.</h1>
+          <p>Elektronik, fashion, kecantikan, sampai pulsa & token listrik — semua dalam satu aplikasi. Gratis ongkir, harga bersaing.</p>
+          <div class="hero-actions">
+            <a class="btn btn-light btn-lg" href="katalog.html">
+              <span>🛍️</span> Mulai Belanja
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="digital.html">
+              <span>⚡</span> Isi Pulsa
+            </a>
+          </div>
+          <div class="hero-trust">
+            <span>✅ 100% Original</span>
+            <span>🚚 Gratis Ongkir</span>
+            <span>🛡️ Garansi Tukar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile Samping -->
+      <div class="hero-side">
+        <a class="hero-tile hero-tile-teal" href="digital.html">
+          <div class="hero-tile-icon-wrap">
+            <span class="hero-tile-icon">⚡</span>
+          </div>
+          <div class="hero-tile-text">
+            <h3>Token Listrik</h3>
+            <p>Isi token PLN kilat 24 jam</p>
+          </div>
+          <span class="hero-tile-arrow">→</span>
+        </a>
+        <a class="hero-tile hero-tile-blue" href="katalog.html?kategori=Elektronik">
+          <div class="hero-tile-icon-wrap">
+            <span class="hero-tile-icon">🎧</span>
+          </div>
+          <div class="hero-tile-text">
+            <h3>Gadget Sale</h3>
+            <p>Diskon hingga 50%</p>
+          </div>
+          <span class="hero-tile-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- QUICK CATEGORIES -->
+  <div class="container">
+    <div class="cat-quick">
+      <div class="cat-quick-grid">
+        <a class="cat-quick-item" href="katalog.html?kategori=Elektronik"><span class="cat-quick-icon">📱</span><span>Elektronik</span></a>
+        <a class="cat-quick-item" href="katalog.html?kategori=Fashion"><span class="cat-quick-icon">👕</span><span>Fashion</span></a>
+        <a class="cat-quick-item" href="katalog.html?kategori=Kecantikan"><span class="cat-quick-icon">💄</span><span>Kecantikan</span></a>
+        <a class="cat-quick-item" href="katalog.html?kategori=Rumah"><span class="cat-quick-icon">🏠</span><span>Rumah</span></a>
+        <a class="cat-quick-item" href="katalog.html?kategori=Olahraga"><span class="cat-quick-icon">⚽</span><span>Olahraga</span></a>
+        <a class="cat-quick-item" href="katalog.html?kategori=Makanan"><span class="cat-quick-icon">🍔</span><span>Makanan</span></a>
+        <a class="cat-quick-item" href="katalog.html?kategori=Hobi"><span class="cat-quick-icon">🎮</span><span>Hobi</span></a>
+        <a class="cat-quick-item" href="digital.html"><span class="cat-quick-icon">📲</span><span>Pulsa</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLASH SALE -->
+  <section class="section">
+    <div class="container">
+      <div class="flash-section">
+        <div class="flash-head">
+          <h2><span class="flash-icon">⚡</span> Flash Sale</h2>
+          <div class="flash-countdown" id="flashCountdown"></div>
+        </div>
+        <div class="flash-grid" id="flashGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYANAN DIGITAL -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>📲 Layanan Digital</h2>
+        <a class="link-more" href="digital.html">Semua Layanan →</a>
+      </div>
+      <div class="digital-grid" id="digitalGrid"></div>
+    </div>
+  </section>
+
+  <!-- TRENDING -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>🔥 Trending Produk</h2>
+        <a class="link-more" href="katalog.html">Lihat Semua →</a>
+      </div>
+      <div class="product-grid" id="trendGrid"></div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <div class="container">
+    <div class="benefits">
+      <div class="benefit"><div class="benefit-icon">🚚</div><div><strong>Gratis Ongkir</strong><small>Tanpa minimum belanja</small></div></div>
+      <div class="benefit"><div class="benefit-icon">🛡️</div><div><strong>Garansi Tukar</strong><small>7 hari pengembalian</small></div></div>
+      <div class="benefit"><div class="benefit-icon">💰</div><div><strong>Harga Terbaik</strong><small>Jaminan termurah</small></div></div>
+      <div class="benefit"><div class="benefit-icon">💬</div><div><strong>CS 24/7</strong><small>Siap bantu kapan saja</small></div></div>
+    </div>
+  </div>
+
+  <!-- TESTIMONI -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2>⭐ Kata Pembeli</h2></div>
+      <div class="testi-grid">
+        <figure class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>"Barang original, packing rapi banget pakai bubble wrap tebal. Pengiriman cuma 2 hari. Recommended!"</blockquote>
+          <div class="testi-author"><span class="testi-avatar">RA</span><div><strong>Rina A.</strong><small>Jakarta · pembeli Earbuds Pro X</small></div></div>
+        </figure>
+        <figure class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>"Beli token listrik jam 11 malam, eh langsung masuk. Prosesnya cepet, harga bersaing. Nggak perlu keluar rumah."</blockquote>
+          <div class="testi-author"><span class="testi-avatar">BS</span><div><strong>Budi S.</strong><small>Surabaya · pembeli Token PLN</small></div></div>
+        </figure>
+        <figure class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>"Sudah langganan belanja di sini. Barangnya sesuai deskripsi, kalau ada kendala CS-nya fast respon via WA."</blockquote>
+          <div class="testi-author"><span class="testi-avatar">MP</span><div><strong>Maria P.</strong><small>Bandung · pelanggan setia</small></div></div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>Butuh bantuan belanja?</h2>
+        <p>Chat CS kami via WhatsApp — kami bantu carikan produk paling pas, atau bantu proses pemesanan.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="https://wa.me/6282340608190?text=Halo%20NUSANTARA%20SHOP" target="_blank" rel="noopener">Chat WhatsApp</a>
+        <a class="btn btn-light" href="kontak.html">Kirim Pesan</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+           <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <img src="Logo_branding/logo.jpg" alt="Logo NUSANTARA SHOP" class="brand-logo">
+        <span class="brand-text"><strong>NUSANTARA SHOP</strong><small>Belanja Apa Aja</small></span>
+      </a>
+      <p>Marketplace multi-kategori + layanan digital. Belanja aman, pengiriman cepat, harga bersaing.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+        <a href="#" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+
+    <nav class="footer-col" aria-label="Navigasi footer">
+      <h3>Navigasi</h3>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="digital.html">Pulsa & Tagihan</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h3>Bantuan</h3>
+      <ul>
+        <li><a href="kontak.html">Cara Pemesanan</a></li>
+        <li><a href="kontak.html">Pengiriman & Ongkir</a></li>
+        <li><a href="kontak.html">Kebijakan Tukar</a></li>
+        <li><a href="kontak.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Hubungi Kami</h3>
+      <ul>
+        <li><a href="https://wa.me/6282340608190">+6282340608190</a></li>
+        <li><a href="mailto:@NUSANTARASHOP.id">@NUSANTARASHOP.id</a></li>
+        <li>Senin–Sabtu, 09.00–21.00 WIB</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Nusantara shop.</p>
+  </div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-panel">
+    <div class="cart-head">
+      <h2>Keranjang (<span id="cartDrawerCount">0</span>)</h2>
+      <button class="cart-close" id="cartClose" aria-label="Tutup keranjang">×</button>
+    </div>
+    <div class="cart-body" id="cartBody"></div>
+    <div class="cart-foot" id="cartFoot"></div>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/jquery_3.6.4/jquery3.6.4/jquery-3.6.4.min.js"></script>
+<script src="assets/bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+<script src="javascript/coast.js" defer></script>
+</body>
+</html>
